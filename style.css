@@ -1,0 +1,457 @@
+@font-face {
+    font-family: "HelveticaNeue-Roman";
+    src: url("./fonts/Helvetica55Roman22439.eot");
+    src: url("./fonts/Helvetica55Roman22439.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Helvetica55Roman22439.otf") format("opentype"),
+    url("./fonts/Helvetica55Roman22439.svg") format("svg"),
+    url("./fonts/Helvetica55Roman22439.ttf") format("truetype"),
+    url("./fonts/Helvetica55Roman22439.woff") format("woff"),
+    url("./fonts/Helvetica55Roman22439.woff2") format("woff2");
+    /*font-weight: normal;
+    font-style: normal;*/
+}
+
+@font-face {
+    font-family: "HelveticaNeue-Medium";
+    src: url("./fonts/Helvetica65Medium22443.eot");
+    src: url("./fonts/Helvetica65Medium22443.eot?#iefix") format("embedded-opentype"),
+    url("./fonts/Helvetica65Medium22443.otf") format("opentype"),
+    url("./fonts/Helvetica65Medium22443.svg") format("svg"),
+    url("./fonts/Helvetica65Medium22443.ttf") format("truetype"),
+    url("./fonts/Helvetica65Medium22443.woff") format("woff"),
+    url("./fonts/Helvetica65Medium22443.woff2") format("woff2");
+   /* font-weight: normal;
+    font-style: normal;*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "HelveticaNeue-Roman", sans-serif;
+}
+
+body {
+    background: #F2F2F2;
+}
+
+.purple {
+    color: #5A1094;
+}
+
+.gr {
+    color: #979797;
+}
+
+/* ------------------ Navigation -------------------------- */
+
+nav {
+    background: #FFF;
+    min-width: 700px;
+}
+
+nav > div {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon > span {
+    margin-left: 5px;
+}
+
+.cart-container {
+    align-items: center;
+    display: flex;
+}
+
+.cart {
+    font-size: 15px;
+    color: #C90EA5;
+}
+
+/* ------------------------------- Main ----------------------------- */
+
+.container {
+    display: flex;
+    width: 50%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #FEFEFE 100%);
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    margin: 50px auto 0;
+    min-width: 700px;
+    max-width: 1700px;
+    position: relative;
+}
+
+.shop {
+    width: 60%;
+}
+
+.sections {
+    display: flex;
+    margin: 30px;
+    justify-content: space-between;
+    width: 55%;
+    cursor: pointer;
+}
+
+form {
+    margin: 30px;
+    position: relative;
+}
+
+.long {
+    width: 100%;
+}
+
+.sec {
+    font-size: 12px;
+}
+
+.title {
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+input {
+    border: 1px solid #DEDCDC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.info {
+    font-size: 16px;
+}
+
+input[placeholder] {
+    font-size: 16px;
+}
+
+input[name="phone"] {
+    margin-right: 15px;
+}
+
+.req-field {
+    position: relative;
+}
+
+.input-message {
+    position: absolute;
+    top: -35px;
+    left: -20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(222, 220, 220, 0.695907);
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #D0021B;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 7px 12px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.input-message.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.input-message::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(222, 220, 220, 0.69);
+    position: absolute;
+    transform: rotate(45deg);
+    border-top: 0;
+    border-left: 0;
+    background: #fff;
+    left: 40px;
+}
+
+.purpose {
+    font-size: 13px;
+    width: 30%;
+    display: inline-block;
+    color: #777879;
+    line-height: 12px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+}
+
+.short {
+    width: 55%;
+}
+
+.shorter {
+    width: 35%;
+}
+
+.geo_svg {
+    position: absolute;
+    transform: translate(-150%, 120%);
+    cursor: pointer;
+}
+
+select {
+    font-size: 16px;
+    color: #6B6B6B;
+    border: 1px solid #DEDCDC;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+option {
+    color: #000;
+}
+
+.zip {
+    width: 100%;
+}
+
+/* ---------------------------- Billing ------------------------------------- */
+
+.billing {
+    position: absolute;
+    top: 0;
+}
+
+.billing-title {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.copy-info {
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: underline;
+}
+
+
+/* --------------------- Payment --------------------------------- */
+
+
+.date-code {
+    display: flex;
+    margin-top: 20px;
+}
+
+.exp-date {
+    width: 50%;
+}
+
+.sec-code {
+    width: 50%;
+}
+
+input[name="expired-date"] {
+    width: 70%;
+}
+
+.sec-code input {
+    width: 70%;
+}
+
+.payment {
+    position: absolute;
+    top: 0;
+}
+
+.payment-security {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.payment-sec-text {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.card_number {
+    margin-top: 20px;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.forms-inputs > div {
+    transition: all 0.5s;
+}
+
+button, .btn-submit {
+    background: rgba(90, 16, 148, 0.8);
+    color: #fff;
+    display: block;
+    border: 1px solid rgba(67, 28, 93, 0.8);
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 12px;
+    margin: 10px 0;
+    width: 180px;
+}
+
+.input-invalid {
+    background: rgba(248, 231, 2, 0.07);
+}
+
+/* ------------------------- Thank you for your order! ------------------------------- */
+
+.thanks {
+    position: absolute;
+    top: 51px;
+    margin: 30px;
+    width: 50%;
+}
+
+.thank-title {
+    font-size: 26px;
+    line-height: 31px;
+}
+
+.order-number {
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 15px;
+}
+
+.confirmation {
+    width: 80%;
+    margin-bottom: 25px;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.delivery-day {
+    width: 60%;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 30px;
+}
+
+.print {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* -------------------------- Order Summery ---------------------------- */
+
+.order_summary {
+    width: 40%;
+    background: #E6E9F0;
+}
+
+.order_container {
+    padding: 30px 10px;
+    height: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.order_head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.order_edit {
+    font-size: 12px;
+    line-height: 14px;
+    color: #979797;
+}
+
+.order_info {
+    display: inline-block;
+}
+
+.order {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(146, 147, 150, 0.21);
+    padding-bottom: 20px;
+}
+
+.order > img {
+    background: #F3F3F3;
+    border: 1px solid #E3E3E3;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.order_name {
+    font-size: 12px;
+    line-height: 11px;
+    color: #777879;
+}
+
+.item_price {
+    font-size: 12px;
+    line-height: 11px;
+    color: #777879;
+}
+
+.desc, .quantity {
+    font-size: 10px;
+    line-height: 12px;
+    color: #2B2525;
+}
+
+.fee {
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(146, 147, 150, 0.21);
+    padding-bottom: 10px;
+}
+
+.subtotal p, .pr p {
+    margin-bottom: 10px;
+}
+
+.total {
+    font-family: "HelveticaNeue-Medium", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.pr {
+    text-align: right;
+}
+
+.order-footer {
+    font-size: 10px;
+    line-height: 12px;
+    position: absolute;
+    bottom: 20px;
+}
+
+.opa {
+    opacity: 0.5;
+}

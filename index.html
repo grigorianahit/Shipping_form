@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <div>
+        <div class="purple icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+                <path d="M21.4276 0.187426C21.5609 -0.0125741 21.8943 -0.0792408 22.0943 0.120759C22.3609 0.320759 22.3609 0.587426 22.2276 0.787426L3.82761 25.1874C3.76095 25.3208 3.56095 25.3874 3.42761 25.3874C3.29428 25.3874 3.16095 25.3208 3.09428 25.2541C2.89428 25.1208 2.89428 24.7874 3.02761 24.5874L21.4276 0.187426ZM0.0942809 13.5874L5.22761 16.5208C5.29428 16.5874 5.36095 16.5874 5.49428 16.5874C5.69428 16.5874 5.82761 16.5208 5.96095 16.3208C6.09428 16.0541 6.02761 15.7874 5.76095 15.6541L1.36095 13.1208L5.76095 10.5874C6.02761 10.4541 6.09428 10.1208 5.96095 9.92076C5.82761 9.65409 5.49428 9.58743 5.29428 9.72076L0.160948 12.6541L0.0942809 12.7208L0.0276142 12.7874V12.8541V12.9208V12.9874V13.0541V13.1208V13.1874C-0.0390524 13.4541 0.0276142 13.5208 0.0942809 13.5874ZM25.3609 13.1208V13.0541V12.9874V12.9208L25.2943 12.8541L25.2276 12.7874L20.0943 9.85409C19.8276 9.72076 19.5609 9.78743 19.4276 10.0541C19.2943 10.3208 19.3609 10.5874 19.6276 10.7208L24.0276 13.2541L19.6276 15.7874C19.3609 15.9208 19.2943 16.2541 19.4276 16.4541C19.4943 16.5874 19.6943 16.7208 19.8943 16.7208C19.9609 16.7208 20.0943 16.7208 20.1609 16.6541L25.2943 13.7208L25.4943 13.5208V13.4541V13.3874L25.4943 13.3874C25.392 13.234 25.3682 13.1983 25.3626 13.1599C25.3609 13.1482 25.3609 13.1363 25.3609 13.1208Z"
+                      fill="url(#paint0_linear)"></path>
+                <defs xmlns="http://www.w3.org/2000/svg">
+                    <linearGradient id="paint0_linear" x1="25.4943" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#7E00E8"></stop>
+                        <stop offset="0.541721" stop-color="#FF1876"></stop>
+                        <stop offset="1" stop-color="#BB0CB2"></stop>
+                    </linearGradient>
+                </defs>
+            </svg>
+            <span>Front-end Developer Test Task</span>
+        </div>
+        <div class="cart-container">
+            <span class="cart">cart</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M5.81366 10.5839H18.5839C18.6335 10.5839 18.6832 10.5839 18.7329 10.5342H18.7826C18.8323 10.5342 18.8323 10.4845 18.8323 10.4845C18.8323 10.4845 18.8323 10.4348 18.882 10.4348L18.9317 10.3851V10.3354C18.9317 10.3354 18.9317 10.3354 18.9317 10.2857L20.4224 3.03106V2.98137C20.4224 2.98137 20.4224 2.98137 20.4224 2.93168C20.4224 2.93168 20.4224 2.93168 20.4224 2.88199C20.4224 2.8323 20.4224 2.8323 20.4224 2.8323C20.4224 2.8323 20.4224 2.78261 20.3727 2.78261C20.3727 2.78261 20.3727 2.73292 20.323 2.73292L20.2733 2.68323L20.2236 2.63354C20.2236 2.63354 20.1739 2.63354 20.1739 2.58385C20.1739 2.58385 20.1739 2.58385 20.1242 2.58385H20.0745C20.0745 2.58385 20.0745 2.58385 20.0248 2.58385H15.8012H14.7578H4.57143L4.07453 0.298137C4.07453 0.298137 4.07453 0.298137 4.07453 0.248447C4.07453 0.198758 4.07453 0.198758 4.02484 0.198758C4.02484 0.198758 4.02484 0.149068 3.97516 0.149068L3.92547 0.0993789L3.87578 0.0496894C3.87578 0.0496894 3.82609 0.0496894 3.82609 0C3.7764 0 3.7764 0 3.72671 0C3.72671 0 3.72671 0 3.67702 0H0.397516C0.198758 0 0 0.149068 0 0.397516C0 0.645963 0.149068 0.795031 0.397516 0.795031H3.37888L5.31677 9.93789C4.47205 10.1366 3.82609 10.882 3.82609 11.8261C3.82609 12.8696 4.67081 13.764 5.76398 13.764H6.70807C6.55901 13.9627 6.50932 14.2112 6.50932 14.5093C6.50932 15.354 7.15528 16 8 16C8.84472 16 9.49068 15.354 9.49068 14.5093C9.49068 14.2609 9.3913 13.9627 9.29193 13.764H15.0062C14.8571 13.9627 14.8075 14.2112 14.8075 14.5093C14.8075 15.354 15.4534 16 16.2981 16C17.1429 16 17.7888 15.354 17.7888 14.5093C17.7888 14.2609 17.6894 13.9627 17.5901 13.764H18.5342C18.7329 13.764 18.9317 13.6149 18.9317 13.3665C18.9317 13.118 18.7826 12.9689 18.5342 12.9689H5.81366C5.1677 12.9689 4.62112 12.4224 4.62112 11.7764C4.62112 11.1304 5.1677 10.5839 5.81366 10.5839ZM14.8075 3.32919H15.8509H19.6273L18.2857 9.83851H6.1118L4.7205 3.32919H14.8075ZM8.79503 14.4596C8.79503 14.8571 8.44721 15.205 8.04969 15.205C7.65217 15.205 7.30435 14.8571 7.30435 14.4596C7.30435 14.0621 7.65217 13.7143 8.04969 13.7143C8.44721 13.7143 8.79503 14.0621 8.79503 14.4596ZM17.0932 14.4596C17.0932 14.8571 16.7453 15.205 16.3478 15.205C15.9503 15.205 15.6025 14.8571 15.6025 14.4596C15.6025 14.0621 15.9503 13.7143 16.3478 13.7143C16.7453 13.7143 17.0932 14.0621 17.0932 14.4596Z"
+                      fill="url(#paint0_radial)"></path>
+                <defs>
+                    <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(16.3359 12.248) rotate(-143.645) scale(14.6092 7.55667)">
+                        <stop stop-color="#7E00E8"></stop>
+                        <stop offset="0.401611" stop-color="#FF1876"></stop>
+                        <stop offset="1" stop-color="#BB0CB2"></stop>
+                    </radialGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="shop">
+        <div class="sections">
+            <p data-form="shipping" class="purple sec">Shipping</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 12 21" fill="none">
+                <g opacity="0.3">
+                    <path d="M1.41065 19.6552L10.4463 10" stroke="#979797" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                    <path d="M10.7561 9.69025L1.10093 0.654575" stroke="#979797" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <p data-form="billing" class="gr sec">Billing</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="21" viewBox="0 0 12 21" fill="none">
+                <g opacity="0.3">
+                    <path d="M1.41065 19.6552L10.4463 10" stroke="#979797" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                    <path d="M10.7561 9.69025L1.10093 0.654575" stroke="#979797" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                </g>
+            </svg>
+            <p data-form="payment" class="gr sec">Payment</p>
+        </div>
+        <form class="forms-inputs">
+            <div class="shipping form-item">
+                <div class="shipping-title">
+                    <p class="title purple">Shipping Info</p>
+                </div>
+                <p class="info recipient purple">Recipient</p>
+                <div class="req-field">
+                    <input type="text" id="recipient-name" class="name long same input-field input-required"
+                           placeholder="Full Name" name="recipient-name" required>
+                    <p class="input-message">Please enter recipient full name</p>
+                </div>
+                <div class="req-field">
+                    <input type="text" class="short input-required" placeholder="Daytime Phone" name="phone" required>
+                    <span class="purpose">For delivery questions only</span>
+                    <p class="input-message">Please enter recipient phone</p>
+                </div>
+                <p class="info address purple">Address</p>
+                <div class="req-field">
+                    <input type="text" id="shipping-street" class="long same input-field input-required"
+                           placeholder="Street Address" name="recipient-address" required>
+                    <p class="input-message">Please enter recipient full street address</p>
+                </div>
+                <div class="req-field">
+                    <input type="text" id="shipping-apt" class="long same input-field input-required"
+                           placeholder="Apt, Suite, Bldg, Gate Code. (optional)" name="recipient-apt" required>
+                    <p class="input-message">Please enter recipient home info</p>
+                </div>
+                <input type="text" id="shipping-city" name="recipient-city" class="long same">
+                <svg class="geo_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                     fill="none">
+                    <path d="M10 0C4.486 0 0 4.486 0 10C0 15.5138 4.486 20 10 20C15.514 20 20 15.5138 20 10C20 4.486 15.514 0 10 0ZM10.8064 13.6452H9.1936V18.3476C5.2114 17.9658 2.0342 14.7886 1.6526 10.8064H6.355V9.1936H1.6526C2.0344 5.2114 5.2114 2.0344 9.1936 1.6526V6.3548H10.8064V1.6526C14.7886 2.0342 17.9658 5.2112 18.3474 9.1936H13.6452V10.8064H18.3476C17.9658 14.7886 14.7886 17.9658 10.8064 18.3474V13.6452Z"
+                          fill="#431C5D"></path>
+                </svg>
+                <div class="location">
+                    <select name="recipient-country" class="short same">
+                        <option value="country" disabled selected> Country</option>
+                    </select>
+                    <div class="req-field shorter">
+                        <input type="text" id="shipping-zip" class="zip same numbers input-field input-required"
+                               placeholder="ZIP" name="recipient-zip" maxlength="5" required>
+                        <p class="input-message">Please enter your zip code</p>
+                    </div>
+                </div>
+                <button type="button" class="form-btn" value="continue">Continue</button>
+            </div>
+            <div class="billing form-item hidden">
+                <div class="billing-title">
+                    <p class="title purple">Billing Information</p>
+                    <span class="copy-info purple">Same as shipping</span>
+                </div>
+                <p class="info billing-contact purple">Billing Contact</p>
+                <input type="text" id="billing-name" class="name long paste" placeholder="Full Name" name="billing-name">
+                <input type="email" placeholder="Email Address" name="email" class="long">
+                <p class="info address purple">Billing Address</p>
+                <input type="text" id="billing-address" class="long paste" placeholder="Street Address"
+                       name="billing-address">
+                <input type="text" id="billing-apt" class="long paste"
+                       placeholder="Apt, Suite, Bldg, Gate Code. (optional)" name="billing-apt">
+                <input type="text" id="billing-city" name="billing-city" class="long paste" placeholder="City">
+                <svg class="geo_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                     fill="none">
+                    <path d="M10 0C4.486 0 0 4.486 0 10C0 15.5138 4.486 20 10 20C15.514 20 20 15.5138 20 10C20 4.486 15.514 0 10 0ZM10.8064 13.6452H9.1936V18.3476C5.2114 17.9658 2.0342 14.7886 1.6526 10.8064H6.355V9.1936H1.6526C2.0344 5.2114 5.2114 2.0344 9.1936 1.6526V6.3548H10.8064V1.6526C14.7886 2.0342 17.9658 5.2112 18.3474 9.1936H13.6452V10.8064H18.3476C17.9658 14.7886 14.7886 17.9658 10.8064 18.3474V13.6452Z"
+                          fill="#431C5D"></path>
+                </svg>
+                <div class="location">
+                    <select name="billing-country" id="country" class="short paste">
+                        <option value="country" disabled selected> Country</option>
+                    </select>
+                    <input type="text" id="billing-zip" class="shorter numbers paste" placeholder="ZIP"
+                           name="billing-zip"
+                           maxlength="5">
+                </div>
+                <button type="button" class="form-btn billing-btn" value="continue">Continue</button>
+            </div>
+            <div class="payment form-item hidden">
+                <p class="title purple">Payment</p>
+                <div class="payment-security">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="26" viewBox="0 0 19 26">
+                        <path fill-rule="evenodd"
+                              d="M14.4006 14.5071V10.1378C14.4006 9.85407 14.171 9.62412 13.8877 9.62412H12.6984V5.50597C12.6984 2.47008 10.2318 0 7.20015 0C4.16852 0 1.70192 2.47008 1.70192 5.50597V9.59601H2.72775V5.50597C2.72775 3.03652 4.73417 1.02727 7.20015 1.02727C9.66614 1.02727 11.6726 3.0362 11.6726 5.50597V9.62412H0.512603C0.229314 9.62412 0 9.85407 0 10.1378V18.5931C0 19.5969 0.811803 20.4099 1.80987 20.4099H8.11179C8.37137 23.183 10.7069 25.361 13.5429 25.361C16.3659 25.361 18.7008 23.2417 18.9741 20.4317C18.9913 20.2549 19 20.0746 19 19.8959C19.0003 18.5568 18.5114 17.2681 17.6235 16.2673C16.7805 15.3176 15.6367 14.7049 14.4006 14.5071ZM1.02583 18.5975V15.3738C1.02583 15.3735 1.02583 15.3735 1.02583 15.3732V10.6514H13.3751V14.4399C10.6158 14.5246 8.36638 16.6651 8.1121 19.3826H1.80987C1.37744 19.3829 1.02583 19.0305 1.02583 18.5975ZM17.9536 20.3324C17.7318 22.6138 15.8358 24.334 13.5433 24.334C11.0997 24.334 9.11173 22.3432 9.11173 19.8962C9.11173 17.4493 11.0997 15.4585 13.5433 15.4585C14.8081 15.4585 16.0158 16.0021 16.8569 16.9497C17.5776 17.762 17.9748 18.8083 17.9748 19.8962C17.9745 20.0418 17.9676 20.1887 17.9536 20.3324Z"
+                              fill="#6B6B6B"></path>
+                    </svg>
+                    <p class="gr payment-sec-text">This is a secure 128-bit SSL encrypted payment</p>
+                </div>
+                <p class="info cardholder purple">Cardholder Name</p>
+                <input type="text" class="long" placeholder="Name as it appears on your card" name="cardholder-name">
+                <p class="info card_number purple">Card Number</p>
+                <input type="text" class="long numbers" placeholder="XXXX XXXX XXXX XXXX" name="card_number">
+                <div class="date-code">
+                    <div class="exp-date">
+                        <p class="info exp_date purple">Expired Date</p>
+                        <input type="text" name="expired-date" class="numbers" placeholder="MM/YY">
+                    </div>
+                    <div class="sec-code">
+                        <p class="info sec_code purple">Security Code</p>
+                        <input type="text" class="numbers" name="security-code" maxlength="3">
+                    </div>
+                </div>
+                <input type="submit" class="btn-submit" value="Pay Securely">
+            </div>
+        </form>
+    </div>
+    <div class="thanks form-item hidden">
+        <p class="purple title thank-title">Thank you for your order!</p>
+        <p class="order-number">Order number is: 188787788</p>
+        <p class="confirmation">Your will receive an email confirmation
+            shortly to <span class="purple confirm-email"></span></p>
+        <p class="delivery-day">Estimated delivery Day is
+            <b>Friday 1st April 2016</b></p>
+        <p class="purple print">Print Recipe</p>
+    </div>
+    <div class="order_summary">
+        <div class="order_container">
+            <div class="order_head">
+                <p class="purple">Order Summary</p>
+                <a href="#" class="order_edit">edit order</a>
+            </div>
+            <div class="order">
+                <div class="order-info">
+                    <img src="Images/shoes.png" alt="">
+                    <div class="order_info">
+                        <div class="item">
+                            <p class="order_name">The Chelsea Boot</p>
+                        </div>
+                        <span class="desc">Black</span>
+                        <p class="quantity">Quantity: 1</p>
+                    </div>
+                </div>
+                <p class="item_price">$235</p>
+            </div>
+            <div class="order">
+                <div class="order-info">
+                    <img src="Images/backpack.png" alt="">
+                    <div class="order_info">
+                        <div class="item">
+                            <p class="order_name">The Twill Snap Backpack</p>
+                        </div>
+                        <span class="desc">Reverse Denim + Brown leather</span>
+                        <p class="quantity">Quantity: 1</p>
+                    </div>
+                </div>
+                <p class="item_price">$65</p>
+            </div>
+            <div class="order">
+                <div class="order-info">
+                    <img src="Images/bag.png" alt="">
+                    <div class="order_info">
+                        <div class="item">
+                            <p class="order_name">The Chelsea Boot</p>
+                        </div>
+                        <span class="desc">Reverse Denim + Black leather</span>
+                        <p class="quantity">Quantity: 1</p>
+                    </div>
+                </div>
+                <p class="item_price">$48</p>
+            </div>
+            <div class="gr fee">
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p>Shipping</p>
+                    <p>Taxes</p>
+                </div>
+                <div class="pr">
+                    <p>$398</p>
+                    <p>Free</p>
+                    <p>$12.12</p>
+                </div>
+            </div>
+            <div class="total purple">
+                <p>Total</p>
+                <p>$410.12</p>
+            </div>
+            <p class="gr order-footer">All purchases are subject to our Terms and Conditions.</p>
+        </div>
+    </div>
+</div>
+<script src="script.js" async></script>
+</body>
+</html>
