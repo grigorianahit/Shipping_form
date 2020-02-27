@@ -117,13 +117,26 @@
                     <span class="copy-info purple">Same as shipping</span>
                 </div>
                 <p class="info billing-contact purple">Billing Contact</p>
-                <input type="text" id="billing-name" class="name long paste" placeholder="Full Name" name="billing-name">
-                <input type="email" placeholder="Email Address" name="email" class="long">
+                <div class="req-field">
+                    <input type="text" id="billing-name" class="name long paste" placeholder="Full Name"
+                           name="billing-name">
+                    <p class="input-message">Please enter billing full name</p>
+                </div>
+                <div class="req-field">
+                    <input type="email" placeholder="Email Address" name="email" class="long">
+                    <p class="input-message">Please enter an email</p>
+                </div>
                 <p class="info address purple">Billing Address</p>
-                <input type="text" id="billing-address" class="long paste" placeholder="Street Address"
-                       name="billing-address">
-                <input type="text" id="billing-apt" class="long paste"
-                       placeholder="Apt, Suite, Bldg, Gate Code. (optional)" name="billing-apt">
+                <div class="req-field">
+                    <input type="text" id="billing-address" class="long paste" placeholder="Street Address"
+                           name="billing-address">
+                    <p class="input-message">Please enter recipient full street address</p>
+                </div>
+                <div class="req-field">
+                    <input type="text" id="billing-apt" class="long paste"
+                           placeholder="Apt, Suite, Bldg, Gate Code. (optional)" name="billing-apt">
+                    <p class="input-message">Please enter recipient home info</p>
+                </div>
                 <input type="text" id="billing-city" name="billing-city" class="long paste" placeholder="City">
                 <svg class="geo_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                      fill="none">
@@ -132,11 +145,10 @@
                 </svg>
                 <div class="location">
                     <select name="billing-country" id="country" class="short paste">
-                        <option value="country" disabled selected> Country</option>
+                        <option value="country" disabled selected>Country</option>
                     </select>
                     <input type="text" id="billing-zip" class="shorter numbers paste" placeholder="ZIP"
-                           name="billing-zip"
-                           maxlength="5">
+                           name="billing-zip" maxlength="5">
                 </div>
                 <button type="button" class="form-btn billing-btn" value="continue">Continue</button>
             </div>
@@ -164,7 +176,7 @@
                         <input type="text" class="numbers" name="security-code" maxlength="3">
                     </div>
                 </div>
-                <input type="submit" class="btn-submit" value="Pay Securely">
+                <input type="button" class="btn-submit" value="Pay Securely">
             </div>
         </form>
     </div>
@@ -174,7 +186,7 @@
         <p class="confirmation">Your will receive an email confirmation
             shortly to <span class="purple confirm-email"></span></p>
         <p class="delivery-day">Estimated delivery Day is
-            <b>Friday 1st April 2016</b></p>
+            <span class="estimate"></span></p>
         <p class="purple print">Print Recipe</p>
     </div>
     <div class="order_summary">

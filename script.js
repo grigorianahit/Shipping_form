@@ -80,8 +80,8 @@ let formSwitches = document.querySelectorAll('[data-form]');
 for (let i = 0; i < formSwitches.length; i++) {
     formSwitches[i].addEventListener('click', switchForm);
 }
-let btn = document.querySelector('.form-btn');
 
+let btn = document.querySelector('.form-btn');
 btn.addEventListener('click', function () {
     let form = this.closest('.form-item');
     let inputs = form.querySelectorAll('.input-required');
@@ -109,7 +109,6 @@ btn.addEventListener('click', function () {
 });
 
 let copyInfo = document.querySelector('.copy-info');
-
 copyInfo.addEventListener('click', function () {
     let sameText = document.querySelectorAll('.same');
     let pasteText = document.querySelectorAll('.paste');
@@ -117,6 +116,7 @@ copyInfo.addEventListener('click', function () {
             pasteText[i].value = sameText[i].value;
     }
 });
+
 let fn = document.querySelectorAll('.name');
 for (let i = 0; i < fn.length; i++) {
     fn[i].addEventListener('input', validate.fullName);
@@ -126,25 +126,34 @@ let zv = document.querySelectorAll('.numbers');
 for (let i = 0; i < zv.length; i++) {
     zv[i].addEventListener('input', validate.zip);
 }
-let bill = document.querySelector('.billing-btn');
 
+let bill = document.querySelector('.billing-btn');
 bill.addEventListener('click', function () {
     let form = this.closest('.form-item');
     switchForm(null, form.nextElementSibling);
 });
-let sbm = document.querySelector('.btn-submit');
 
+let sbm = document.querySelector('.btn-submit');
 sbm.addEventListener('click', function () {
     let shop = document.querySelector('.shop');
     let opa = document.querySelector('.order_summary');
     let thanks = document.querySelector('.thanks');
-    let confirm = document.getElementsByClassName('.confirm-email');
+    let confirm = document.querySelector('.confirm-email');
+    let estimate = document.querySelector('.estimate');
     confirm.innerText = document.querySelector('[name="email"]').value;
     thanks.classList.remove('hidden');
     shop.classList.add('hidden');
     opa.classList.add('opa');
+    let current = new Date();
+    current.setDate(current.getDate() + 30);
+    estimate.innerText = current;
+
 });
 
+let print = document.querySelector('.print');
+print.addEventListener('click', function () {
+    window.print();
+});
 
 function switchForm(ev, fObj) {
     let forms = document.querySelectorAll('.forms-inputs>div');

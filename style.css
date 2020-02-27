@@ -352,9 +352,14 @@ button, .btn-submit {
     margin-bottom: 30px;
 }
 
+.estimate {
+    font-weight: bold;
+}
+
 .print {
     text-decoration: underline;
     cursor: pointer;
+    display: inline;
 }
 
 /* -------------------------- Order Summery ---------------------------- */
