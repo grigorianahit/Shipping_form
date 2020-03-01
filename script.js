@@ -20,7 +20,13 @@ function setCountries(countryList) {
         select.appendChild(o);
     }
     let bSel = document.querySelector('[name= "billing-country"]');
-    bSel.parentElement.replaceChild(select.cloneNode(true), bSel);
+    for (let i = 0; i < countryList.length; i++) {
+        let o = document.createElement("option");
+        o.innerText = countryList[i].name;
+        o.value = countryList[i].name;
+        bSel.appendChild(o);
+        /* bSel.parentElement.replaceChild(select.cloneNode(true), bSel);*/
+    }
 }
 
 getCountries();
@@ -70,7 +76,7 @@ let validate = {
             return;
         }
         v = v[v.length - 1].codePointAt(0);
-        if (!((v >= 48 && v <= 57))) {
+        if (!(v >= 48 && v <= 57) || this.value.length > 5) {
             this.value = this.value.slice(0, -1);
         }
     },
@@ -89,6 +95,12 @@ btn.addEventListener('click', function () {
         if (inputs[i].value.length === 0) {
             inputs[i].classList.add('input-invalid');
         } else {
+            if (inputs[i].getAttribute('data-input') === "zip") {
+                if (inputs[i].value.length < 4 || inputs[i].value.length > 5) {
+                    inputs[i].classList.add('input-invalid');
+                    continue;
+                }
+            }
             inputs[i].classList.remove('input-invalid');
             let msg = inputs[i].closest('.req-field').querySelector('.input-message');
             if (msg) {
@@ -113,7 +125,9 @@ copyInfo.addEventListener('click', function () {
     let sameText = document.querySelectorAll('.same');
     let pasteText = document.querySelectorAll('.paste');
     for (let i = 0; i < sameText.length; i++) {
+        if(sameText[i].getAttribute('data-input') === pasteText[i].getAttribute('data-input')) {
             pasteText[i].value = sameText[i].value;
+        }
     }
 });
 
